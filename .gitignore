@@ -1,0 +1,17 @@
+debug.log
+project.private.config.json
+*.log
+node_modules/
+__pycache__/
+.env
+.DS_Store
+backend/target/
+.env.local
+.env.*.local
+unpackage/
+.idea/
+.vscode/
+dist/
+*.iml
+Thumbs.db
+desktop.ini

@@ -1,0 +1,60 @@
+# 《早日暴富》后端服务配置
+# 对应文档：3.整体架构设计.md
+
+server:
+  port: 8585
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: zaori-baofu
+
+  # MySQL 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zrbf?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+
+  # Redis 缓存（对应文档 3.整体架构设计.md 6 缓存设计）
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      timeout: 3000ms
+
+  # JSON 序列化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+
+# MyBatis-Plus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+# 日志
+logging:
+  level:
+    com.zaori.baofu: debug
+    org.springframework: info
+
+# 微信小程序配置
+wx:
+  miniapp:
+    appid: ${WX_APPID:your-appid}
+    secret: ${WX_SECRET:your-secret}
+    # 开发模式：未配置真实微信凭据时，登录接口直接使用固定开发用户
+    mock-login: ${WX_MOCK_LOGIN:true}
+
+# JWT 配置
+jwt:
+  secret: ${JWT_SECRET:zaori-baofu-dev-secret-key-2026-please-change-me-32bytes}
+  expiration: 604800  # 7天（秒）

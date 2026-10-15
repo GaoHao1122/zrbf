@@ -1,0 +1,71 @@
+// 基础样式重置：去掉小程序默认边距，统一字体与背景
+page {
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-size: var(--font-base);
+  line-height: 1.5;
+  font-family: $font-family;
+}
+
+view,
+text,
+scroll-view,
+input,
+textarea,
+button {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  line-height: inherit;
+
+  &::after {
+    border: none;
+  }
+}
+
+input,
+textarea {
+  color: var(--color-text-primary);
+}
+
+// 通用按钮样式：各页面直接使用 .btn + 修饰类
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  padding: 0 var(--spacing-lg);
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  transition: opacity var(--duration-fast) ease-out;
+
+  &--primary {
+    color: #ffffff;
+    background: var(--color-primary);
+  }
+
+  &--primary[disabled] {
+    opacity: 0.5;
+  }
+
+  &--ghost {
+    color: var(--color-text-regular);
+    background: var(--color-bg-card);
+    border: 1rpx solid var(--color-border);
+  }
+
+  &--danger {
+    color: var(--color-error);
+    background: var(--color-bg-card);
+    border: 1rpx solid rgba(255, 77, 79, 0.4);
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

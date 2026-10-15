@@ -1,0 +1,36 @@
+{
+  "name": "zrbf-miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "早日暴富 - 彩票投资收益记录微信小程序（uni-app + Vue3 + TypeScript）",
+  "scripts": {
+    "dev:h5": "uni",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:h5": "uni build",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-4020920240930001",
+    "@dcloudio/uni-components": "3.0.0-4020920240930001",
+    "@dcloudio/uni-h5": "3.0.0-4020920240930001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4020920240930001",
+    "echarts": "^5.5.0",
+    "pinia": "^2.1.7",
+    "tslib": "^2.6.2",
+    "vue": "3.4.21",
+    "vue-i18n": "^9.13.1",
+    "zrender": "^5.6.0"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.8",
+    "@dcloudio/uni-cli-shared": "3.0.0-4020920240930001",
+    "@dcloudio/uni-stacktracey": "3.0.0-4020920240930001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4020920240930001",
+    "@vue/tsconfig": "^0.5.1",
+    "sass": "^1.77.8",
+    "typescript": "^5.4.5",
+    "vite": "5.2.8",
+    "vue-tsc": "^2.0.13"
+  }
+}

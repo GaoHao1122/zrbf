@@ -1,0 +1,25 @@
+{
+  "name": "早日暴富",
+  "appid": "",
+  "description": "彩票投资收益记录微信小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wxe1611785196804cb",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "lazyCodeLoading": "requiredComponents"
+  },
+  "h5": {
+    "router": {
+      "mode": "hash"
+    },
+    "title": "早日暴富"
+  }
+}

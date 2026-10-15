@@ -1,0 +1,112 @@
+{
+  "pages": [
+    {
+      "path": "pages/dashboard/index",
+      "style": {
+        "navigationBarTitleText": "早日暴富",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/lottery/add",
+      "style": {
+        "navigationBarTitleText": "今日登记"
+      }
+    },
+    {
+      "path": "pages/lottery/list",
+      "style": {
+        "navigationBarTitleText": "历史记录",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/lottery/detail",
+      "style": {
+        "navigationBarTitleText": "当日详情"
+      }
+    },
+    {
+      "path": "pages/lottery/edit",
+      "style": {
+        "navigationBarTitleText": "编辑明细"
+      }
+    },
+    {
+      "path": "pages/chart/trend",
+      "style": {
+        "navigationBarTitleText": "趋势分析"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/statistics",
+      "pages": [
+        {
+          "path": "week",
+          "style": {
+            "navigationBarTitleText": "周统计"
+          }
+        },
+        {
+          "path": "month",
+          "style": {
+            "navigationBarTitleText": "月统计"
+          }
+        },
+        {
+          "path": "year",
+          "style": {
+            "navigationBarTitleText": "年统计"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "早日暴富",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8C8C8C",
+    "selectedColor": "#FF6B35",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/dashboard/index",
+        "text": "首页",
+        "iconPath": "static/icons/tab/home.png",
+        "selectedIconPath": "static/icons/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/lottery/list",
+        "text": "记录",
+        "iconPath": "static/icons/tab/list.png",
+        "selectedIconPath": "static/icons/tab/list-active.png"
+      },
+      {
+        "pagePath": "pages/chart/trend",
+        "text": "趋势",
+        "iconPath": "static/icons/tab/chart.png",
+        "selectedIconPath": "static/icons/tab/chart-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/icons/tab/mine.png",
+        "selectedIconPath": "static/icons/tab/mine-active.png"
+      }
+    ]
+  }
+}
